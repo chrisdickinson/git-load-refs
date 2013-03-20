@@ -1,0 +1,26 @@
+{
+  "name": "git-load-refs",
+  "version": "0.0.0",
+  "description": "stream of git refs given a stream of paths and fs.Stats",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/git-load-refs.git"
+  },
+  "keywords": [
+    "git",
+    "load",
+    "refs"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "gitHead": "0abcd9310dc8365b2e7e3ce6413bed2a0a33d591",
+  "browser": {"./fs.js": "./fs-shim.js"},
+  "dependencies": {
+    "through": "~2.2.7",
+    "git-packed-ref-parse": "0.0.0"
+  }
+}
