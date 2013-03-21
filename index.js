@@ -58,7 +58,7 @@ function discover_loose(basepath, fs) {
     fs.createReadStream(relpath)
       .pipe(packedrefs())
       .pipe(through(transform_packed_ref))
-      .on('data', format_type('packed-ref'))
+      .on('data', format_type(stream, 'packed-ref'))
       .on('error', maybe_end) 
       .on('end', maybe_end) 
   }
