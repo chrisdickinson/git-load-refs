@@ -24,5 +24,8 @@
   "dependencies": {
     "through": "~2.2.7",
     "git-packed-ref-parse": "0.0.0"
+  },
+  "devDependencies": {
+    "ls-stream": "^1.0.0"
   }
 }
