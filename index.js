@@ -59,8 +59,8 @@ function discover_loose(basepath, fs) {
       .pipe(packedrefs())
       .pipe(through(transform_packed_ref))
       .on('data', format_type(stream, 'packed-ref'))
-      .on('error', maybe_end) 
-      .on('end', maybe_end) 
+      .on('error', maybe_end)
+      .on('end', maybe_end)
   }
 
   function read_ref(relpath, type, name) {
@@ -68,8 +68,8 @@ function discover_loose(basepath, fs) {
       .pipe(accum())
       .pipe(through(transform_plain_ref))
       .on('data', format_type(stream, type, name))
-      .on('error', maybe_end) 
-      .on('end', maybe_end) 
+      .on('error', maybe_end)
+      .on('end', maybe_end)
   }
 }
 
@@ -92,7 +92,7 @@ function transform_plain_ref(buf) {
     , hash: null
     , type: null
     , name: null
-    })  
+    })
   }
 
   this.queue({
