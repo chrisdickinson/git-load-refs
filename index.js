@@ -85,7 +85,7 @@ function transform_packed_ref(packed_entry) {
 
 function transform_plain_ref(buf) {
   // "ref:" as a big endian integer
-  if(buf.readUInt32BE(0) === 0x7265663a) {
+  if(buf.length && buf.readUInt32BE(0) === 0x7265663a) {
     return this.queue({
       symbolic: true
     , ref: buf.slice(5).toString('utf8').replace(/\n$/, '')
