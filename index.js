@@ -98,7 +98,7 @@ function transform_plain_ref(buf) {
   this.queue({
     symbolic: false
   , ref: null
-  , hash: buf.toString('utf8').replace(/\n$/, '')
+  , hash: buf.toString('utf8').slice(0, 40)
   , type: null
   , name: null
   })

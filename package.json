@@ -1,6 +1,6 @@
 {
   "name": "git-load-refs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "stream of git refs given a stream of paths and fs.Stats",
   "main": "index.js",
   "scripts": {
